@@ -55,6 +55,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
+    });
+});
+
 
 // /bad --send back json with errorMessage
 app.get('/bad', (req, res) => {
@@ -74,3 +80,8 @@ app.listen(port, () => {
 // ensemble robuste de fonctionnalités pour les applications Web et mobiles
 // Avec une myriade de méthodes utilitaires HTTP et de middleware à votre disposition, 
 // la création d'une API robuste est simple et rapide.  
+
+// https://intense-coast-48723.herokuapp.com/he
+
+// https://intense-coast-48723.herokuapp.com/ | https://git.heroku.com/intense-coast-48723.git
+// heroku open
